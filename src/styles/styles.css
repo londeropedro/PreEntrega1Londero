@@ -1,0 +1,19 @@
+.Title {
+    font-size: 40px;
+    font-family: fantasy;
+    font-style: italic;
+    background-color: rgb(83, 8, 117);
+    color: chartreuse;
+    padding: 20px;
+  }
+
+  .Nav {
+    font-size: 20px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(83, 8, 117);
+    border-style: solid;
+  }
+  
+  .body {
+    background-color: rgb(57, 204, 12);
+  }
