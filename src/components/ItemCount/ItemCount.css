@@ -1,0 +1,29 @@
+.Contador {
+  display:grid;
+  flex-direction:column;
+  justify-content:center;
+  width:500px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+  align-content:space-between;
+}
+
+.texto {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-style: bold;
+    color: rgb(140, 0, 255);
+    background-color: aquamarine;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.cantidad {
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(17, 0, 255);
+    padding: 20px;
+    margin-top: 5px;
+}
