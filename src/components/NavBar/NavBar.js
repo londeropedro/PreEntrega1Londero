@@ -10,10 +10,10 @@ const NavBar =() => {
                 <h1 className='Title'>TENIS SHOP PARANÁ</h1>                
             </Link>
             <Stack direction="horizontal" gap={2}>
-                <div className='col-md-3'>
-                    <NavLink to={`/category/Raquetas`}>Raquetas </NavLink>
-                    <NavLink to={`/category/Bolsos`}>Bolsos </NavLink>
-                    <NavLink to={`/category/Indumentaria`}>Indumentaria </NavLink>
+                <div className='col-md-4'>
+                    <NavLink className='Button' to={`/category/Raquetas`}> Raquetas </NavLink>
+                    <NavLink className='Button' to={`/category/Bolsos`}> Bolsos </NavLink>
+                    <NavLink className='Button' to={`/category/Indumentaria`}> Indumentaria </NavLink>
                 </div>
                 <div className="ms-auto m-4">
                     <CardWidget />
