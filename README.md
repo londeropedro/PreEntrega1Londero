@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Proyecto de Tenis Shop Paraná
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El presente sitio ofrece la posibilidad de adquirir cualquier tipo de producto relacionado con el tenis. 
 
-## Available Scripts
+Desde elementos como raquetas o bolsos como así también hasta la indumentaria necesaria para poder desarrollar este deporte que tanto nos gusta.
 
-In the project directory, you can run:
+# Tecnología Utilizada
 
-### `npm start`
+- firebase (Versión 9.22.1): librería utilizada para conexión e interacción con la Base de Datos.
+- react (Versión 18.2.0): librería base del lenguaje utilizado para el desarrollo.
+- react-bootstrap (Versión 2.7.2): librería de React utilizada para realizar todo los efectos de diseño del sitio.
+- react-dom (Versión 18.2.0): librería que se encarga de renderizar los componentes de React para el navegador
+- react-router-dom (Versión 6.11.0): librería que facilita el proceso de definir las rutas de navegación dentro de la aplicación
+- react-scripts (Versión 5.0.1): paquete de npm que brinda lo necesario para crear la aplicación.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Instalación del Proyecto
+Para la realización del proyecto Tenis Shop Paraná se utilizó React como lenguaje de desarrollo para lo cual es necesario hacer lo siguiente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+En primer lugar se descargó e instaló la última version de node.js desde el sitio oficial [node.js](https://nodejs.org.)
 
-### `npm test`
+Luego se debe hacer la instalación del React propiamente dicho, para lo cual se debe dirigir a la carpeta en la que se desea generar el proyecto y desde el Visual Studio Code, se procede a abrir una Terminal y ejecutar la siguiente instrucción:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`npx create-react-app nombre-del-proyecto`
 
-### `npm run build`
+Este comando creará una nueva carpeta con el nombre que especificaste detallamos y generará una estructura básica de proyecto de React dentro de ella.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Después de que se complete la creación del proyecto, se deberá navega a la carpeta recién creada utilizando el comando cd. Por ejemplo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`cd nombre-del-proyecto`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Finalmente, se deberá ejecuta el siguiente comando para iniciar el servidor de desarrollo de React:
 
-### `npm run eject`
+`npm start`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Luego se abrirá el navegador en la dirección de localhost con la presentación y página principal del sitio.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Presentación del Sitio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+El funcionamiento presente sitio de E-Commerce se puede observar desde el siguiente link:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[https://drive.google.com/file/d/1YqLqIHC4wx2V2N3QdKGhKOby3_44KP29/view?usp=drive_link]Video Presentación...

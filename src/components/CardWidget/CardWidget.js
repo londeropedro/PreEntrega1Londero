@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const CardWidget = () => {
     const {totalCantidad} = useContext(CartContext)
    
-
     return(
 
         <Link to='/cart' className='CartWidget'>

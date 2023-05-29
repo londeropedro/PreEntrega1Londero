@@ -8,7 +8,7 @@ const ItemList = ({productos}) => {
             {productos?.map(producto => {
                 return(
                     <div className='card' key={producto.id}>
-                        <img className='card__img' src={producto.image}></img> <br />
+                        <img className='card__img' src={producto.image} alt='Detalles'></img> <br />
                         {producto.title} <br />
                         <NavLink to={"/Item/" + producto.id}>ver detalle</NavLink>
                     </div>

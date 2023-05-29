@@ -1,34 +1,32 @@
 import {useState, useEffect} from 'react'
 import ItemList from '../ItemList/ItemList.js'
-import products from "../../products.json"
 import { useParams } from 'react-router-dom'
+import { getDocs, collection, query, where } from 'firebase/firestore'
+import { db } from '../../services/firebase/firebaseConfig.js'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
     const [estado, setEstado] = useState([])
-
+    
     const { categoryId } = useParams()
 
     useEffect(() => {
-      const pedido = new Promise((res, rej) => {
-        setTimeout(() => {
-          if(categoryId != null){
-            const respuesta = products.filter(prod => prod.category === categoryId)
-            res(respuesta)
-          }
-          else
-            res(products)
-          
-        },2000)
-      })
-      
-      pedido
-        .then((resultado) => {
-            setEstado(resultado)
+     
+
+      const collectionRef = categoryId
+        ? query(collection(db, '1'), where('category', '==', categoryId))
+        : collection(db, '1')
+
+      getDocs(collectionRef)
+        .then(response => {
+          const productsAdapted = response.docs.map(doc => {
+            const data = doc.data()
+            return {id: doc.id, ...data}
+          })
+          setEstado(productsAdapted)
         })
-        .catch((error) => {
+        .catch(error => {
           console.log(error)
         })
-  
     }, [categoryId])
 
     return (

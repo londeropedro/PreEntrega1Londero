@@ -1,8 +1,8 @@
-import './ItemDetailContainer.css'
 import { useState, useEffect } from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
-import products from "../../products.json"
+import { getDoc, doc } from 'firebase/firestore'
+import { db } from '../../services/firebase/firebaseConfig'
 
 
 const ItemDetailContainer = () => {
@@ -12,21 +12,17 @@ const ItemDetailContainer = () => {
     const {Id} = useParams()
 
     useEffect(() => {
-        const pedido = new Promise((res, rej) => {
-            setTimeout(() => {
-                const respuesta = products.find(prod => prod.id === Id)
-                res(respuesta)
-            },2000)
-          })
-          
-          pedido
-            .then((resultado) => {
-                setProduct(resultado)
+        const docRef = doc(db, '1', Id)
+        
+        getDoc(docRef)
+            .then(response => {
+                const data = response.data()
+                const productsAdapted = {id: response.id, ...data}
+                setProduct(productsAdapted)
             })
-            .catch((error) => {
-              console.log(error)
+            .catch(error => {
+                console.log(error)
             })
-      
         }, [Id])
 
     return(
