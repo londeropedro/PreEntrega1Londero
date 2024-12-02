@@ -33,9 +33,3 @@ Finalmente, se deberá ejecuta el siguiente comando para iniciar el servidor de 
 `npm start`
 
 Luego se abrirá el navegador en la dirección de localhost con la presentación y página principal del sitio.
-
-# Presentación del Sitio
-
-El funcionamiento presente sitio de E-Commerce se puede observar desde el siguiente link:
-
-[https://drive.google.com/file/d/1YqLqIHC4wx2V2N3QdKGhKOby3_44KP29/view?usp=drive_link]Video Presentación...
